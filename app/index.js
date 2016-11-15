@@ -1,4 +1,3 @@
-// const Koa = require('koa');
 import Koa from 'koa'
 import routing from './routes'
 import logger from 'koa-logger'
@@ -9,4 +8,5 @@ app.use(cors)
 app.use(logger())
 app.use(bodyParser())
 routing(app)
-app.listen(3000);
+export default app
+
