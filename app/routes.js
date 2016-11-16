@@ -4,7 +4,7 @@
 import Router from 'koa-router'
 let route = new Router
 route.get('/', (ctx)=> {
-    ctx.body = {success:true}
+    ctx.body = {success:'I love you'}
 })
 
 

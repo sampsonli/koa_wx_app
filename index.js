@@ -9,11 +9,11 @@ let path = require('path')
 var app = require('./app').default;
 
 app.listen(3000);
-/*fs.access(path.join(__dirname, 'config/'), (err)=>{
+fs.access(path.join(__dirname, 'config/'), (err)=>{
     if(!err){
         https.createServer({
-            key: fs.readFileSync(path.join(__dirname, 'config/xx.key')),
-            cert: fs.readFileSync(path.join(__dirname, 'config/xx.crt'))
+            key: fs.readFileSync(path.join(__dirname, 'config/500.key')),
+            cert: fs.readFileSync(path.join(__dirname, 'config/500.crt'))
         }, app.callback()).listen(443)
     }
-})*/
+})
