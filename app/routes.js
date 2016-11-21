@@ -3,7 +3,7 @@
  */
 import Router from 'koa-router'
 let route = new Router
-route.get('/', (ctx)=> {
+route.get('/api/hello', (ctx)=> {
     ctx.body = {success:'I love you'}
 })
 
