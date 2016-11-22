@@ -8,7 +8,8 @@ import cors from './middleware/cors'
 const app = new Koa();
 app.use(cors)
 app.use(logger())
-app.use(staticCache(path.join(__dirname, '../static'),{
+// app.use(staticCache(path.join(__dirname, '../static'),{
+app.use(staticCache('/home/project/sampsonapp/dist/',{
     gzip: true,
     maxAge: 60 * 30
 }))
