@@ -5,7 +5,7 @@ import Router from 'koa-router'
 import {pullStaticCode} from './tools/webhooks'
 
 let route = new Router
-route.get('/webhooks/pullstaticcode', async (ctx)=>{
+route.post('/webhooks/pullstaticcode', async (ctx)=>{
     let stdout = await pullStaticCode()
     ctx.body = stdout
 })
