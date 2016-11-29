@@ -9,9 +9,8 @@ const app = new Koa();
 app.use(cors)
 app.use(logger())
 app.use(server(path.join(__dirname, '../../static'),{
-// app.use(server('/home/project/sampsonapp/dist/',{
     gzip: true,
-    maxage: 60 * 30
+    maxage: 1800*1000
 }))
 app.use(bodyParser())
 routing(app)
