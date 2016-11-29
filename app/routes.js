@@ -10,7 +10,7 @@ route.post('/webhooks/pullstaticcode', async (ctx)=>{
     ctx.body = stdout
 })
 route.get('/api/hello', (ctx)=> {
-    ctx.body = {success:'I love you'}
+    ctx.body = {success:'I love you!!!'}
 })
 
 
